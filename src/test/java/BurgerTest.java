@@ -48,9 +48,8 @@ public class BurgerTest {
         burger.addIngredient(ingredients.get(0));
         burger.addIngredient(ingredients.get(1));
         burger.moveIngredient(1, 0);
-        Assert.assertEquals(500, burger.getPrice(), 0.0f);
         Assert.assertEquals(6, ingredients.size());
-        //Assert.assertEquals(new Ingredient(IngredientType.FILLING, "dinosaur", 200), ingredients.get(4));
+
     }
     @Test
     public void checkReceipt() {
